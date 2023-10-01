@@ -1,0 +1,250 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+
+/* hide scrollbar but allow scrolling */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  
+}
+body {
+   background: rgb(34,195,153);
+background: radial-gradient(circle, rgba(34,195,153,0.5690870098039216) 0%, rgba(181,45,253,0.24695815826330536) 100%);
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+.bg-white{
+    background:  #38598b;
+}
+
+.cart-items {
+    padding-left: 30px;
+    display: inline-flex;
+}
+.bg-gray{
+    background: #38598b;
+}
+
+sup{
+    top: -0.2em;
+}
+.not-allowed{
+    cursor: not-allowed;
+}
+.btn:focus{
+    outline: none;
+}
+.input-group:focus, form-control:focus{
+    outline: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.mw-10 {
+    max-width: 10% ;
+}
+.mw-20 {
+    max-width: 20% ;
+}
+.mw-30 {
+    max-width: 30% ;
+}
+.mw-40 {
+    max-width: 40% ;
+}
+.mw-50 {
+    max-width: 50% ;
+}
+.mw-60 {
+    max-width: 60% ;
+}
+.mw-70 {
+    max-width: 70% ;
+}
+.mw-80 {
+    max-width: 80% ;
+}
+.mw-90 {
+    max-width: 90% ;
+}
+div.scroll {
+    margin:4px, 4px;
+    padding:4px;
+    background-color: blue;
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+.table .scrollable {
+
+    height: 10%;
+
+    overflow: auto;
+
+}
+.form-control {
+    -webkit-box-shadow: none!important;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.text-small{
+    font-size: .8rem
+}
+.cart-image {
+    border: 1px solid #ddd ; 
+    border-radius: 4px ;  
+    padding: 5px ; 
+    width: 80px;
+}
+.height-50{
+    height: 50vh;
+}
+.height-90{
+    height: 90vh;
+}
+/** toast message **/
+#toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    right:0;
+    bottom: 10px;
+    white-space: nowrap;
+}
+#toast #img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    text-align: center;
+}
+#toast #desc{
+    color: #ff8800;
+    padding: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes expand {
+    from {
+        min-width: 50px;
+    }
+    to {
+        min-width: 50%;
+    }
+}
+
+@keyframes expand {
+    from {
+        min-width: 50px;
+    }
+    to {
+        min-width: 50%;
+    }
+}
+@-webkit-keyframes stay {
+    from {
+        min-width: 50%;
+    }
+    to {
+        min-width: 50%;
+    }
+}
+
+@keyframes stay {
+    from {
+        min-width: 50%;
+    }
+    to {
+        min-width: 50%;
+    }
+}
+@-webkit-keyframes shrink {
+    from {
+        min-width: 350%;
+    }
+    to {
+        min-width: 50%;
+    }
+}
+
+@keyframes shrink {
+    from {
+        min-width: 50%;
+    }
+    to {
+        min-width: 50px;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 0px;
+        opacity: 1;
+    }
+    to {
+        bottom: 30px;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 0px;
+        opacity: 1;
+    }
+    to {
+        bottom: 30px;
+        opacity: 0;
+    }
+}
